@@ -1,0 +1,94 @@
+@import '../../variables.sass'
+
+.container
+    height: 100%
+    min-height: 100vh
+
+.randoms-list
+    display: flex
+    padding-top: 3rem
+    padding-bottom: 3rem
+    height: 100%
+    min-height: 100vh
+    flex-flow: column
+    align-items: center
+    justify-content: center
+
+.rules
+    padding-top: 3rem
+    padding-bottom: 4rem
+    &__header
+        display: block
+        margin: 0 auto
+        margin-bottom: 2rem
+        width: 90%
+        font-size: 2.2rem
+        text-align: center
+    &__rule
+        padding: 0 2rem
+        font-size: 2rem
+        margin-top: 1rem
+        line-height: 1.4
+        text-align: justify
+
+.notifications
+    display: flex
+    height: 100%
+    margin: 0 auto
+    width: 90%
+    min-height: 100vh
+    flex-flow: column
+    justify-content: center
+    align-items: center
+
+.about
+    display: flex
+    padding-top: 12rem
+    flex-flow: column
+    align-items: center
+    &__header
+        font-size: 3.5rem
+        margin-bottom: 0
+    &__version
+        margin-top: 1rem
+        color: $txt-3
+        font-weight: 400
+        font-size: 1.8rem
+    &__account
+        margin-top: 3rem
+        margin-bottom: 1.5rem
+        display: block
+        font-size: 2rem
+        color: $txt-3
+    &__footer
+        position: absolute
+        bottom: 6.5rem
+        left: 50%
+        font-size: 1.6rem
+        color: $txt-3
+        transform: translateX(-50%)
+        z-index: 1000
+
+@media only screen and (min-width: 560px)
+    .rules__rule
+          padding: 0 5rem
+    .notifications
+        width: 80%
+
+@media only screen and (min-width: 780px)
+    .rules__rule
+          padding: 0 5rem
+    .notifications
+        width: 70%
+          
+@media only screen and (min-width: 960px)
+    .rules__rule
+            padding: 0 10rem
+    .notifications
+        width: 40%
+          
+@media only screen and (min-width: 1100px)
+    .rules__rule
+            padding: 0 15rem
+    .notifications
+        width: 35%

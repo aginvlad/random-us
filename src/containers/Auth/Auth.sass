@@ -1,0 +1,78 @@
+@import '../../variables.sass'
+
+.auth
+    padding-top: 8rem
+    height: 100vh
+    text-align: center
+    background: linear-gradient(180deg, #F78CA0 0%, #F9748F 27.76%, #FD868C 66.31%, #FE9A8B 100%)
+
+    &__title
+        display: flex
+        flex-flow: column
+        align-items: center
+        h1
+            margin: 2rem
+            font-size: 4.8rem
+            font-weight: 400
+            color: $text-light
+
+    &-sign-in
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -25%)
+
+        &__input
+            padding: 2rem 1.5rem
+            width: 31rem
+            height: 6rem
+            font-size: 1.8rem
+            font-weight: 300
+            color: #828282
+            border: none
+            border-radius: 10px
+
+            &::placeholder
+                color: #828282
+                
+        &__btn-wrapper
+            display: flex
+            margin: 3rem auto
+            width: 31rem
+            justify-content: center
+            align-items: center
+            .auth-sign-in__btn
+                width: 31rem
+                height: 6rem
+                border-radius: 1rem
+                box-shadow: 0 6px 4px rgba(0, 0, 0, 0.17)
+                transition: all .2s ease-in
+                &:active
+                    box-shadow: none
+                    transform: scale(0.98)
+            i
+                position: absolute
+                right: 2.5rem
+                font-size: 2rem
+                color: $btn-text-1
+
+        &__error
+            display: none
+            color: $text-light
+            font-size: 1.5rem
+    
+    footer
+        position: absolute
+        left: 50%
+        bottom: 0
+        padding: 0.4rem 1rem
+        width: 21rem
+        font-size: 1.7rem
+        font-weight: 300
+        color: #fe998b
+        border-top-left-radius: 8px 
+        border-top-right-radius: 8px 
+        background-color: $text-light
+        transform: translateX(-50%)
+            
+        

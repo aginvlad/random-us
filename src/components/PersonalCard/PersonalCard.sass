@@ -1,0 +1,65 @@
+@import '../../variables.sass'
+
+.personal-card
+    position: relative
+    display: flex
+    width: 90%
+    height: 5rem
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    border-radius: 50px
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06)
+    &--the-crown
+        position: absolute
+        top: -2rem
+        left: 1.8rem
+        font-size: 2rem
+        z-index: 2
+    &--winner
+        background-color: $btn-1
+        .personal-card__name
+            color: #fff
+    &--sinica
+        position: absolute
+        top: 50%
+        right: .6rem
+        width: 2.5rem
+        transform: translateY(-45%)
+    &__photo
+        position: absolute
+        left: 0
+        width: 6rem
+        height: 6rem
+        color: transparent
+        border: 3px solid $bg
+        border-radius: 50%
+        background-color: $bg
+    &__name
+        color: rgba($txt-1, 0.88)
+        text-align: center
+        font-size: 1.5rem
+        font-weight: 600
+        transform: translateX(2.5rem)
+
+    &:not(:last-child)
+        margin-bottom: 1rem
+
+@media only screen and (min-width: 375px)
+    .personal-card
+        &--sinica
+            right: 1rem
+        &__name
+            font-size: 1.8rem
+    
+@media only screen and (min-width: 560px)
+    .personal-card
+        width: 80%
+
+@media only screen and (min-width: 960px)
+    .personal-card
+        width: 60%
+
+@media only screen and (min-width: 1100px)
+    .personal-card
+        width: 45%

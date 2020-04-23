@@ -1,0 +1,39 @@
+{
+  "name": "random-us",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "prevent-pull-refresh": "^1.0.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build-sw": "node ./src/sw-build.js",
+    "clean-cra-sw": "rimraf build/precache-manifest.*.js && rimraf build/service-worker.js",
+    "build": "react-scripts build && npm run build-sw && npm run clean-cra-sw",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.13.1"
+  }
+}
